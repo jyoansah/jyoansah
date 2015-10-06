@@ -78,3 +78,16 @@ a{
     text-decoration: none;
 }
 
+.contact li{
+    list-style: none;
+}
+
+.contact{
+    text-align: center;
+}
+
+.contact a:hover{
+    text-decoration: none;
+    color: #4169e1;
+}
+
