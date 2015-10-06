@@ -14,6 +14,7 @@ nav{
 	line-height: 7px;
 }
 .navbar-nav{
+    margin-top: 50px;
     float: right;
 }
 
@@ -47,7 +48,7 @@ a{
 #grid figcaption {
     position: absolute;
     width: 100%;
-    height: 10%;
+    height: 20%;
     opacity: .2;
     backface-visibility: hidden;
     bottom: 0;
@@ -62,9 +63,18 @@ a{
 }
 
 #grid figure:hover figcaption,
-#grid figure.cs-hover figcaption {
+#grid figure.cs-hover figcaption{
     opacity: 0.9;
     height: 50%;
 }
 
+#grid figcaption.sml {
+    height: 30%;
+}
+#grid figure:hover figcaption.sml,
+#grid figure.cs-hover figcaption.sml{
+    opacity: 0.95;
+    height: 90%;
+    text-decoration: none;
+}
 
