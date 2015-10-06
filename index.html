@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+
+	<title>Yaw</title>
+
+
+	<link href="bootstrap/css/custom.css" rel="stylesheet">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+	<!-- Bootstrap -->
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+		    $("body").css("display", "none");
+		    $("header").fadeIn(1000);
+		    $("body").fadeIn(2000);
+
+		    $("a.transition").click(function(event){
+				event.preventDefault();
+				linkLocation = this.href;
+				$("body").fadeOut(500, redirectPage);      
+			});
+		 
+			function redirectPage() {
+				window.location = linkLocation;
+			}    
+		});
+	</script>
+
+</head>
+
+<body>
+	<!-- 
+	  ********************************
+		 Navigation 
+	  ******************************** 
+	  -->
+
+
+	<div class="container" id="header">
+		<div class="row">
+			<div class="col-md-8" color="">
+				<h1>Yaw Owusu- Ansah</h1>
+				<h4>Developer. Designer. Pan-African.</h4>
+			</div>
+
+			<div class="col-md-2">
+				<nav >
+					<ul class="nav">
+						<li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span> &nbsp Home</a></li>
+
+						<li><a href="http://designedbylw.com/#projects" class="transition"><span class="glyphicon glyphicon-th-large"></span> &nbsp Portfolio</a></li>
+
+						<li><a href="resume" class="transition"><span class="glyphicon glyphicon-folder-close"></span> &nbsp Resume</a></li>
+
+						<li><a href="#" class="transition"><span class="glyphicon glyphicon-user"></span> &nbsp Online</a></li>
+
+
+					</ul>
+				</nav>
+			</div>
+			<div class="col-md-1">
+		</div>
+	</div>
+
+	<!-- 
+	  ********************************
+		 content 
+	  ******************************** 
+	  -->
+
+	<div class="container" id="grid">
+		<div class="row">
+			<div class="col-md-4">
+				<figure>
+					<a href="#" ><img src="img/develop.png"></a>
+					<figcaption>
+	                	<h3>Developer</h3>
+	                	<p>French-vanilla fuelled code lies somewhere between a hobby an an obsession. I also use it for work.</p>
+            		</figcaption>
+				</figure>
+			</div>
+			<div class="col-md-4">
+				<figure>
+					<a href="#" ><img src="img/design.png"></a>
+					<figcaption>
+	                	<h3>Designer</h3>
+	                	<p>Perfect design is what keeps me resizing one square till I'm certain. It could take hours.</p>
+            		</figcaption>
+				</figure>
+			</div>
+			<div class="col-md-4">
+			<figure>
+					<a href="#" ><img src="img/panafrican.png"></a>
+					<figcaption>
+	                	<h3>Pan-African</h3>
+	                	<p>A car engine needs fuel. A torchlight needs battries. Africa needs young and passionate people.</p>
+            		</figcaption>
+				</figure>
+			</div>
+		</div>
+	</div>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src=
+	"https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
