@@ -1,0 +1,70 @@
+html { 
+    background: url(../img/bg.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body{
+	padding-top: 30px;
+    background: transparent !important;
+}
+nav{
+	line-height: 7px;
+}
+.navbar-nav{
+    float: right;
+}
+
+a{
+    color: #333 !important;
+
+}
+
+.active{
+    background-color: #aeaeae !important;
+}
+
+#grid{
+	padding-top: 90px;
+}
+
+#grid figure {
+    margin: 0;
+    position: relative;
+}
+
+#grid img{
+	max-width: 100%;
+	display: block;
+    position: relative;
+}
+
+#grid h3{
+	color: #000;
+}
+#grid figcaption {
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    opacity: .2;
+    backface-visibility: hidden;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    background: #C2C2C2;
+    color: #333;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+#grid figure:hover figcaption,
+#grid figure.cs-hover figcaption {
+    opacity: 0.9;
+    height: 50%;
+}
+
+
