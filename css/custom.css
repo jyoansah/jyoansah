@@ -17,10 +17,11 @@ body {
     background: transparent !important;
     background-size: cover;
     font-size: 16px;
+    color: #ffffff
 }
 
 p {
-    color: #ffffff;
+
 }
 
 a {
@@ -29,7 +30,7 @@ a {
 }
 
 a:hover {
-    color: inherit;
+    color: #303030;
     text-decoration: none;
 }
 
@@ -49,7 +50,7 @@ a:hover {
 .title h1 {
     color: #ffffff !important;
     font-variant: small-caps;
-    font-size: 48px;
+    font-size: 50px;
     -webkit-transition: opacity 1s;
     transition: opacity 1s;
 }
@@ -61,7 +62,15 @@ a:hover {
     text-transform: uppercase;
 }
 
+.h3 i, h3 i{
+    font-style: normal;
+    color: #303030;
+}
 
+
+p {
+    text-align: justify;
+}
 
 .title{
     margin-top: 15%;
@@ -99,7 +108,7 @@ a:hover {
 }
 
 .menu span::before{
-    color: #bbbbbb;
+    color: #303030;
     opacity: 0;
     -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
     transition: transform 0.5s, opacity 0.5s;
@@ -128,6 +137,12 @@ a:hover {
 .menu.home{
     display: none;
     opacity: .5;
+    float: right;
+}
+
+.contact{
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
 }
 
 /*------------------------------------------------------*/
@@ -142,3 +157,138 @@ a:hover {
     display: none;
     position: absolute;
 }
+
+.scroll{
+    color: #ffffff;
+    font-weight: 300;
+    top:10%
+}
+
+.scroll:hover{
+    color: #303030 !important;
+
+}
+
+.work {
+    margin-top: 120px;
+    height: 170px;
+}
+
+.item:first-of-type{
+    display: block;
+}
+
+.item{
+    position: absolute;
+    display: none;
+}
+
+.item img{
+    float: left;
+    width: 100%;
+}
+
+.item figcaption{
+    display: none;
+    top: 30%;
+    position: absolute;
+    margin-left: 170px;
+    min-width: 200px;
+}
+
+.item figcaption li{
+    list-style: none;
+}
+
+
+.action{
+    float: left;
+    /*min-width: 150px;*/
+    /*max-width: 250px;*/
+    display: block;
+    margin-right: 15px;
+    margin-left: 15px;
+    border: none;
+    background: none;
+    color: inherit;
+    vertical-align: middle;
+    position: relative;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
+    width: 200px;
+}
+
+
+.button:focus {
+    outline: none;
+}
+.button > span {
+    vertical-align: middle;
+}
+
+.action::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid;
+    border-radius: inherit;
+    -webkit-clip-path: polygon(0% 0%, 0% 100%, 35% 100%, 35% 60%, 65% 60%, 65% 100%, 100% 100%, 100% 0%);
+    -webkit-transform: translate3d(0, 100%, 0) translate3d(0, -2px, 0);
+    transform: translate3d(0, 100%, 0) translate3d(0, -2px, 0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+}
+
+
+.action::before,
+.action .icon {
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+    transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+}
+.action .icon {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    padding: 20px;
+    font-size: 30px;
+    -webkit-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
+}
+image .icon{
+    width: 30px;
+}
+
+.action > span {
+    display: block;
+    padding: 20px;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+.action:hover::before {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+.action:hover .icon {
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+    -webkit-transform: translate3d(-50%, -100%, 0);
+    transform: translate3d(-50%, -100%, 0);
+}
+.action:hover > span {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+
